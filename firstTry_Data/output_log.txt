@@ -1,0 +1,43 @@
+Initialize engine version: 5.2.1f1 (44735ea161b3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\bobi\Google Drive\the Sweet Game folder\frog race\firstTry_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\bobi\Google Drive\the Sweet Game folder\frog race\firstTry_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\bobi\Google Drive\the Sweet Game folder\frog race\firstTry_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\bobi\Google Drive\the Sweet Game folder\frog race\firstTry_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\bobi\Google Drive\the Sweet Game folder\frog race\firstTry_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\bobi\Google Drive\the Sweet Game folder\frog race\firstTry_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\bobi\Google Drive\the Sweet Game folder\frog race\firstTry_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\bobi\Google Drive\the Sweet Game folder\frog race\firstTry_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\bobi\Google Drive\the Sweet Game folder\frog race\firstTry_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.154 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\bobi\Google Drive\the Sweet Game folder\frog race\firstTry_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 3ac0 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.937156 ms
+
+Unloading 41 unused Assets to reduce memory usage. Loaded Objects now: 156.
+Total: 0.369493 ms (FindLiveObjects: 0.022501 ms CreateObjectMapping: 0.015395 ms MarkObjects: 0.179220 ms  DeleteObjects: 0.150402 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.343045 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 255.
+Total: 0.299621 ms (FindLiveObjects: 0.020132 ms CreateObjectMapping: 0.013816 ms MarkObjects: 0.258961 ms  DeleteObjects: 0.005921 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.845967 ms
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 188.
+Total: 0.442918 ms (FindLiveObjects: 0.027238 ms CreateObjectMapping: 0.015790 ms MarkObjects: 0.232907 ms  DeleteObjects: 0.165798 ms)
+
