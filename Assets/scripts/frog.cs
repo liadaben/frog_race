@@ -132,7 +132,10 @@ public class frog : MonoBehaviour {
 
     public void hammerFrog()
     {
-        Stared--;
+        if (Stared > 0)
+        {
+            Stared--;
+        }
     }
 
     void OnMouseDown()
@@ -147,7 +150,7 @@ public class frog : MonoBehaviour {
         }
         else if(systems.hammerPressed)
         {
-            systems.starPressed = !systems.starPressed;
+            systems.hammerPressed = !systems.hammerPressed;
             hammerFrog();
         }
         else

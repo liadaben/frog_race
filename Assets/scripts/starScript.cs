@@ -38,8 +38,6 @@ public class starScript : MonoBehaviour {
         {
             this.gameObject.GetComponent<SpriteRenderer>().color = org;
         }
-
-
         systems.starPressed = !systems.starPressed;
     }
 }

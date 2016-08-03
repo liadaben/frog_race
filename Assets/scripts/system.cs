@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
 public class system : MonoBehaviour {
 
     private bool won = false;
@@ -41,7 +43,7 @@ public class system : MonoBehaviour {
             {
                 PlayerPrefs.SetString("winnerNum" + i.ToString(), selectedFrog[i]);
             }
-            Application.LoadLevel("winner");
+            SceneManager.LoadScene("winner");
         }
     }
 }

@@ -17,7 +17,6 @@ public class hammerScript : MonoBehaviour {
         system systems = cam.GetComponent<system>();
         if (systems.hammerPressed)
         {
-
             this.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
         }
         else
