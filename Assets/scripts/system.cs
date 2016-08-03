@@ -7,11 +7,13 @@ public class system : MonoBehaviour {
     private int winner;
     private frog winnerFrog;
     public bool starPressed;
+    public bool hammerPressed;
     // Use this for initialization
     void Start () {
         won = false;
         PlayerPrefs.SetInt("player", -1);
         starPressed = false;
+        hammerPressed = false;
     }
 	
 	// Update is called once per frame

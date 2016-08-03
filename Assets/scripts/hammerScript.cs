@@ -3,13 +3,44 @@ using System.Collections;
 
 public class hammerScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    Color org;
+    // Use this for initialization
+    void Start()
+    {
+        org = this.gameObject.GetComponent<SpriteRenderer>().color;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+        system systems = cam.GetComponent<system>();
+        if (systems.hammerPressed)
+        {
+
+            this.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+        }
+        else
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().color = org;
+        }
+    }
+
+    void OnMouseDown()
+    {
+        GameObject cam = GameObject.FindGameObjectWithTag("MainCamera");
+        system systems = cam.GetComponent<system>();
+        if (!systems.hammerPressed)
+        {
+
+            this.gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+        }
+        else
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().color = org;
+        }
+
+
+        systems.hammerPressed = !systems.hammerPressed;
+    }
 }

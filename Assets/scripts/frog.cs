@@ -15,7 +15,7 @@ public class frog : MonoBehaviour {
     private textFiled g;
     public int frogNum;
     private string findName = "";
-
+    private Color org_color;
     private int Stared;
     // Use this for initialization
     void Start () {
@@ -24,10 +24,12 @@ public class frog : MonoBehaviour {
         upAmount = 1.0f;
         selectedFrog = new List<string>();
         Stared = 1;
+        org_color = this.gameObject.GetComponent<SpriteRenderer>().color;
     }
 	
 	// Update is called once per frame
 	void Update () {
+        set_frog_color();
         if (!paused)
         {
             moveX = Random.Range(1 + Stared, 50);
@@ -36,6 +38,21 @@ public class frog : MonoBehaviour {
         }
     }
 
+    private void set_frog_color()
+    {
+        if (Stared > 1)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
+        }
+        else if (Stared < 1)
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        }
+        else
+        {
+            this.gameObject.GetComponent<SpriteRenderer>().color = org_color;
+        }
+    }
     private bool isName(string name)
     {
 
@@ -111,9 +128,13 @@ public class frog : MonoBehaviour {
     public void starFrog()
     {
         Stared++;
-        this.gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
-        
     }
+
+    public void hammerFrog()
+    {
+        Stared--;
+    }
+
     void OnMouseDown()
     {
         
@@ -123,6 +144,11 @@ public class frog : MonoBehaviour {
         {
             systems.starPressed = !systems.starPressed;
             starFrog();
+        }
+        else if(systems.hammerPressed)
+        {
+            systems.starPressed = !systems.starPressed;
+            hammerFrog();
         }
         else
         {
